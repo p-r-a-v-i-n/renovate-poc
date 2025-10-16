@@ -5,6 +5,7 @@
     "group:allMinor",
     "group:allPatch"
   ],
+  "schedule": ["at any time"],
   "python": {
     "fileMatch": ["(^|/)(pyproject|Pipfile)\\.toml$"]
   },
@@ -28,4 +29,3 @@
     }
   ]
 }
-
