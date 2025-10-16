@@ -1,4 +1,4 @@
-#Renovate PoC - Dependency Update Test
+# Renovate PoC - Dependency Update Test
 
 This is a simple Python project designed as a Proof of Concept (PoC) to test the functionality of the Renovate dependency bot.
 
