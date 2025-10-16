@@ -10,7 +10,7 @@ readme = "README.md"
 python = "^3.10"
 # This dependency is intentionally pinned to a very old version (2.20.0) 
 # to ensure Renovate immediately detects an available update.
-requests = "2.20.0" 
+requests = "2.32.5" 
 
 [build-system]
 requires = ["poetry-core"]
