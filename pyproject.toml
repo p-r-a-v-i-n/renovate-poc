@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "renovate-poc"
+version = "0.1.0"
+description = "PoC project for testing Renovate bot against outdated Python dependencies."
+authors = ["Pravin"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+# This dependency is intentionally pinned to a very old version (2.20.0) 
+# to ensure Renovate immediately detects an available update.
+requests = "2.20.0" 
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+

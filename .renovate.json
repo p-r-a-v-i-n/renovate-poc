@@ -1,0 +1,31 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    "group:allMinor",
+    "group:allPatch"
+  ],
+  "python": {
+    "fileMatch": ["(^|/)(pyproject|Pipfile)\\.toml$"]
+  },
+  "dependencyDashboard": true,
+  "git-commit": {
+    "commitMessagePrefix": "chore(deps): "
+  },
+  "packageRules": [
+    {
+      "description": "Group all major updates into a single PR for review",
+      "matchUpdateTypes": ["major"],
+      "groupName": "major-dependencies",
+      "automerge": false
+    },
+    {
+      "description": "Auto-merge patch and minor updates for requests",
+      "matchPackageNames": ["requests"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "automerge": true,
+      "automergeType": "branch"
+    }
+  ]
+}
+
