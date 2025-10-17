@@ -10,9 +10,7 @@
     "fileMatch": ["(^|/)(pyproject|Pipfile)\\.toml$"]
   },
   "dependencyDashboard": true,
-  "git-commit": {
-    "commitMessagePrefix": "chore(deps): "
-  },
+  "commitMessagePrefix": "chore(deps): ",
   "packageRules": [
     {
       "description": "Group all major updates into a single PR for review",
