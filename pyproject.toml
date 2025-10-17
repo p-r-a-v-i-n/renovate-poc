@@ -13,7 +13,7 @@ license = "MIT"
 requires-python = ">=3.10"
 dependencies = [
   # This is intentionally pinned to an old version to test Renovate
-  "requests>=1,<3.0"
+  "requests>=2.20,<3.0"
 ]
 
 [project.optional-dependencies]
