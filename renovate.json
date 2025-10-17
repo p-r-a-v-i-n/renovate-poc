@@ -3,7 +3,7 @@
   "extends": ["config:recommended", ":gitSignOff"],
   "rangeStrategy": "widen",
   "prConcurrentLimit": 2,
-  "schedule": ["on the first day of the month"],
+  "schedule": ["at any time"],
   "python": {
     "fileMatch": ["(^|/)(pyproject|Pipfile)\\.toml$"]
   },
